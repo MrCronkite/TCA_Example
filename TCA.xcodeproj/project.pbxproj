@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		84341B552FAB41B200582A3E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 84341B542FAB41B200582A3E /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		84DCD0DB2FAB31A00010A4EA /* TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84341B552FAB41B200582A3E /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = TCA;
 			packageProductDependencies = (
+				84341B542FAB41B200582A3E /* ComposableArchitecture */,
 			);
 			productName = TCA;
 			productReference = 84DCD0DB2FAB31A00010A4EA /* TCA.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 84DCD0D22FAB31A00010A4EA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				84341B532FAB41B200582A3E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 84DCD0DC2FAB31A00010A4EA /* Products */;
 			projectDirPath = "";
@@ -332,6 +341,27 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84341B532FAB41B200582A3E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = exactVersion;
+				version = 1.25.5;
+			};
+			traits = (
+			);
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84341B542FAB41B200582A3E /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84341B532FAB41B200582A3E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84DCD0D32FAB31A00010A4EA /* Project object */;
 }

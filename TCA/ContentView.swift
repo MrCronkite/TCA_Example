@@ -6,19 +6,32 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct ContentView: View {
+
+    let store: StoreOf<CounterReducer>
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 20) {
+
+            Text("\(store.counter)")
+                .font(.largeTitle)
+                .bold()
+
+            HStack(spacing: 40) {
+
+                Button("-") {
+                    store.send(.decrement)
+                }
+                .font(.largeTitle)
+
+                Button("+") {
+                    store.send(.increment)
+                }
+                .font(.largeTitle)
+            }
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
